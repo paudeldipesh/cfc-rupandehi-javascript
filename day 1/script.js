@@ -32,7 +32,7 @@ let secondNumber = 18;
 secondNumber--;
 console.log(secondNumber);
 
-sum = 18;
+let sum = 18;
 sum += 2; // equals to sum = sum + 2;
 console.log(sum);
 
@@ -69,16 +69,16 @@ console.log("false && false", false && false);
 console.log("true && true", true && true);
 console.log("false && true", false && true);
 
-// let credentials = confirm("Do you want to login?");
-// if (credentials) {
-//   console.log("He want to login");
-// } else {
-//   console.log("Not intrested");
-// }
+let credentials = confirm("Do you want to login?");
+if (credentials) {
+  console.log("He wants to login");
+} else {
+  console.log("Not intrested");
+}
 
-// let input = prompt("What is your name?");
-// alert(input);
-// console.log(input, typeof input);
+let input = prompt("What is your name?");
+alert(input);
+console.log(input, typeof input);
 
 let user_input = prompt("Give any number?");
 user_input = Number.parseInt(user_input);
@@ -102,10 +102,10 @@ switch (user_input) {
 
 // Task: while and do while loop
 let organization = "Code for change";
-console.log(organization[0]);
-console.log(organization[1]);
-console.log(organization[2]);
-console.log(organization[3]);
+console.log(organization[0]); // C
+console.log(organization[1]); // o
+console.log(organization[2]); // d
+console.log(organization[3]); // e
 
 for (let i = 0; i < organization.length; i++) {
   console.log(organization[i]);
@@ -134,12 +134,13 @@ console.log(second);
 console.log(third);
 
 let students_one = ["Ram", "Shyam", "Jiwan", "Samir", "Dipesh", "Ganesh"];
-console.log(students_one[0]);
-console.log(students_one[1]);
-console.log(students_one[2]);
-console.log(students_one[3]);
-console.log(students_one[4]);
-console.log(students_one[5]);
+console.log(students_one[0]); // Ram
+console.log(students_one[1]); // Shyam
+console.log(students_one[2]); // Jiwan
+console.log(students_one[3]); // Samir
+console.log(students_one[4]); // Dipesh
+console.log(students_one[5]); // Ganesh
+
 for (let index = 0; index < students_one.length; index++) {
   console.log(students_one[index]);
 }
@@ -156,9 +157,7 @@ console.log(students_two.join(" "));
 
 let number_array = [9, 8, 2, 1, 4, 3];
 
-let sorted_array = number_array.sort(function (a, b) {
-  return a - b;
-});
+let sorted_array = number_array.sort((a, b) => a - b);
 
 console.log(sorted_array);
 console.log(number_array); // array is mutable
@@ -170,13 +169,13 @@ function sayHi() {
 
 // sayHi();
 
-// arguments
-function sumPlusOne(a, b) {
-  return a + b + 1;
-}
+// parameters
+// function sumPlusOne(a, b) {
+//   return a + b + 1;
+// }
 
 // Arrow function
-// const sumPlusOne = (a, b) => a + b + 1;
+const sumPlusOne = (a, b) => a + b + 1;
 
-// parameters
+// arguments
 console.log(sumPlusOne(2, 8));
