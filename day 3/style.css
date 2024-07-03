@@ -1,0 +1,19 @@
+.container {
+  background-color: green;
+}
+
+img {
+  height: 100px;
+}
+
+.user-name {
+  color: white;
+  background-color: orangered;
+  padding: 10px;
+  width: 500px;
+  margin: 5px;
+}
+
+.street {
+  color: blue;
+}
